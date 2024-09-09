@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Milton Class Filter",
+  "version": "1.0",
+  "description": "Filters pickleball classes and adds the day of the week to the class headings.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://townofmilton.perfectmind.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
